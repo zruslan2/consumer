@@ -32,7 +32,7 @@ namespace ConsumerCons
             using (var channel = connection.CreateModel())
             {
                 channel.QueueDeclare(queue: "files",
-                                     durable: false,
+                                     durable: true,
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
